@@ -7,3 +7,13 @@
         }
 });
 
+
+
+  document.querySelector(".back-button").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.body.classList.add("fade-out");
+
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 100); // wait for fade-out to complete
+  });
